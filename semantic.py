@@ -48,5 +48,8 @@ Comparing tiger vs wolf and wolf vs monkey at about 71% and 56% respectively -
 For the former with a high similarity both animals are apex predators, while the same cannot be said for the latter.
 
 We have 100% matches when comparing similar tokens
-"""
 
+Running the example file with a simpler language model 'en_core_web_sm' returns a 'UserWarning: [W007]...' 
+which results in less accurate similarity judgements for doc.similarity method
+because the small models don't ship with word vectors tensors.
+"""
